@@ -1,7 +1,8 @@
 function cartel(){
-alert("HOLA!")
+alert("HOLA!");
 }
 const div= document.getElementById("miDiv")
-div.addEventListener("click",function(){
-    alert("hola soy el div!")
+div.addEventListener("click",function(event){
+    alert("hola soy el div!");
+    event.stopPropagation();
 })
